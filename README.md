@@ -2,13 +2,13 @@
  This project is an attempt to learn ROS2 and particualrly robomapping using SLAM Algorithms.
 
 # Prerequisites
- -ROS2 humble
- -RViz2
- -Gazebo
- -TurtleBot3
- -Navigation2
- -Nav2_bringup
- -Slam-Toolbox
+ - ROS2 humble
+ - RViz2
+ - Gazebo
+ - TurtleBot3
+ - Navigation2
+ - Nav2_bringup
+ - Slam-Toolbox
 
 # Problems
  My approach to this project was to create a launch file which automates the entire SLAM simulation using TurtleBot3 in Gazebo. It enables mapping using SLAM and visualization using RViz2, also teleop is used to manually control the robot.

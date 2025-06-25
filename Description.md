@@ -8,3 +8,5 @@ I approached this project by creating a launch file that automates the startup o
 
 # Code explanation:
 ### Robot Model:
+Burger model from TurtleBot3 is set as the environment variable so that the dependent nodes know which robot configuration to use.
+

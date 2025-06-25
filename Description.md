@@ -12,5 +12,16 @@ Burger model from TurtleBot3 is set as the environment variable so that the depe
 ### Get shared direcories:
 Get the share/ directories of turtlebot3_gazebo, nav2_bringup and slam-toolbox.
 ### Gazebo Simulation:
-
-
+Launching Gazebo with TurtleBot3 Burger inside the predefined turtlebot3_world. The robot model spawns with a LiDAR which will be used to map the world.
+### Launch Nav2(Navigation Stack):
+Here Nav2 is only used to subscribe to /map and /tf.
+### Start SLAM Toolbox:
+- Starting SLAM Toolbox in online asynchronous mode.
+- Subscribes to /scan. (from LiDAR)
+- Subscribes to /odom.
+- Builds map in real-time.
+- Publishes /map and /tf.(Nav2 subscribes to these topics)
+### Launch RViz2:
+I am launching RViz2 using the nav2_default_view from nav2_bringup, this loads Robot-model, Lasser scan, Map display, Costmaps and TF tree. This lets us see where the robot is, what the robot sees(LiDAR) and what SLAM algorithm has mapped so far.
+### Launch Keyboard Teleop:
+Teleop requires keyboard inputs, so I am using xterm which creates a seperate window which accepts keyboard inputs, in this way we are able to manually explore the environment.

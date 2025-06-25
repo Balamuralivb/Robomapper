@@ -9,7 +9,7 @@ I approached this project by creating a launch file that automates the startup o
 # Code explanation:
 ### Robot Model:
 Burger model from TurtleBot3 is set as the environment variable so that the dependent nodes know which robot configuration to use.
-### Get shared direcories:
+### Get shared directories:
 Get the share/ directories of turtlebot3_gazebo, nav2_bringup and slam-toolbox.
 ### Gazebo Simulation:
 Launching Gazebo with TurtleBot3 Burger inside the predefined turtlebot3_world. The robot model spawns with a LiDAR which will be used to map the world.
